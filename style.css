@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./new\ of\ one.webp") no-repeat;
+  background-size: cover;
+}
+.clock{
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.9) ;
+  height: 24vh;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.clock:active {
+ background-color: #4682b4;
+}
+.clock:hover{
+  color: white;
+}
+.clock:active{
+  background-color: red;
+}
+.clock h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.clock span{
+  position: relative;
+  top: -10%;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (min-width:270px) and (max-width:480px) {
+ .clock{
+  max-width: 260px;
+  padding: 5px;
+ } 
+  .clock h1{
+font-size: 2.6rem;
+ }
+}
+@media screen and (max-width:270px) {
+ .clock{
+  max-width: 260px;
+  padding: 5px;
+ } 
+  .clock h1{
+font-size: 1.9rem;
+ }
+}
